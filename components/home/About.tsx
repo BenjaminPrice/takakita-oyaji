@@ -7,23 +7,26 @@ import { Users, Calendar, Heart, School } from "lucide-react";
 const values = [
   {
     icon: <Users className="h-8 w-8 text-accent" />,
-    title: "コミュニティ",
-    description: "父親同士のつながりを深め、互いに支え合う環境を作ります。",
+    title: "子どもたちとの触れ合い",
+    description:
+      "イベント活動を通じて、子どもたちと楽しく交流し、健全な成長をサポートします。",
   },
   {
     icon: <Calendar className="h-8 w-8 text-accent" />,
-    title: "参加しやすさ",
-    description: "忙しい父親でも気軽に参加できる活動を心がけています。",
+    title: "おやじ同士の絆",
+    description:
+      "活動を通じておやじ同士の交流を深め、互いに支え合う関係を築きます。",
   },
   {
     icon: <Heart className="h-8 w-8 text-accent" />,
-    title: "子どもの成長",
-    description: "子どもたちの健全な成長を促す活動を企画・実施します。",
+    title: "楽しむこと",
+    description:
+      "おやじたち自身もしっかり楽しむことができる会です。できる時に、できることを楽しむ！",
   },
   {
     icon: <School className="h-8 w-8 text-accent" />,
-    title: "学校支援",
-    description: "高洲北小学校の教育活動をサポートしています。",
+    title: "活動の実績",
+    description: "スキー、釣り、BBQなど、様々な活動を実現してきました。",
   },
 ];
 
@@ -39,11 +42,11 @@ export default function About() {
           className="text-center mb-16"
         >
           <h2 className="section-title inline-block relative">
-            高北おやじの会について
+            私たちについて
             <span className="absolute -bottom-2 left-0 w-full h-1 bg-primary"></span>
           </h2>
           <p className="text-lg max-w-3xl mx-auto text-text-muted">
-            多くの子供たちと触れ合いながら高北のイベント活動を下支えすることで、おやじ同士の絆が広がり、子供たちの健全育成に繋がることを期待しています。
+            高洲北小学校に通う児童のおやじからなるゆるい集まりです。平成22年（2010年）に設立されました。
           </p>
         </motion.div>
 
@@ -56,8 +59,8 @@ export default function About() {
           >
             <div className="relative rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="https://images.pexels.com/photos/8424630/pexels-photo-8424630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="高北おやじの会の活動の様子"
+                src="https://images.pexels.com/photos/5637689/pexels-photo-5637689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="高北おやじの会のメンバー"
                 width={600}
                 height={400}
                 className="w-full h-auto"
@@ -73,11 +76,11 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h3 className="text-2xl font-bold mb-4 text-accent">
-              私たちの活動理念
+              おやじの会とは
             </h3>
             <p className="mb-6 text-text-muted">
-              「子どもたちに多様な経験を」を合言葉に、普段の生活では体験できない貴重な経験を提供することを目指しています。
-              父親ならではの視点と経験を活かし、子どもたちの好奇心と創造性を育みます。
+              多くの子供たちと触れ合いながら高洲北のイベント活動を下支えすることで、おやじ同士の絆が広がり、子供たちの健全育成に繋がることを期待しています。
+              おやじたちのやりたいこと（子供たちが喜ぶこと）をどんどん提案いただき、実現することも可能です。
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import Link from "next/link";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -19,21 +19,20 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">連絡先</h3>
             <ul className="space-y-2">
-              <li className="flex items-start">
-                <MapPin className="mr-2 h-5 w-5 shrink-0 mt-0.5" />
-                <span>〒279-0023 千葉県浦安市高洲北小学校内</span>
-              </li>
-              <li className="flex items-center">
-                <Phone className="mr-2 h-5 w-5 shrink-0" />
-                <span>047-123-4567</span>
-              </li>
               <li className="flex items-center">
                 <Mail className="mr-2 h-5 w-5 shrink-0" />
                 <span>info@takakita-oyaji.jp</span>
               </li>
-              <li className="flex items-center">
-                <Clock className="mr-2 h-5 w-5 shrink-0" />
-                <span>活動日: 毎月第3土曜日</span>
+              <li>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdV14JuNHRqraHKNjj9OM5N-VR4M5ps44N06tsiPUdOVe4llw/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline inline-flex items-center"
+                >
+                  <Mail className="mr-2 h-5 w-5 shrink-0" />
+                  お問い合わせフォーム
+                </a>
               </li>
             </ul>
           </div>
