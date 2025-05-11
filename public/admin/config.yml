@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+locale: 'ja'
+
+collections:
+  - name: "blog"
+    label: "ブログ"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "タイトル", name: "title", widget: "string"}
+      - {label: "投稿日", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
+      - {label: "著者", name: "author", widget: "string", default: "高北おやじの会"}
+      - {label: "アイキャッチ画像", name: "image", widget: "image"}
+      - {label: "概要", name: "excerpt", widget: "text"}
+      - {label: "本文", name: "body", widget: "markdown"}
