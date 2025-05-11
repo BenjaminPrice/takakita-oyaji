@@ -1,9 +1,9 @@
-import Hero from '@/components/home/Hero';
-import About from '@/components/home/About';
-import Activities from '@/components/home/Activities';
-import BlogSection from '@/components/home/Blog';
-import Contact from '@/components/home/Contact';
-import { getSortedPostsData } from '@/lib/utils';
+import Hero from "@/components/home/Hero";
+import About from "@/components/home/About";
+import Activities from "@/components/home/Activities";
+import BlogSection from "@/components/home/Blog";
+import Contact from "@/components/home/Contact";
+import { getSortedPostsData } from "@/lib/utils";
 
 export default async function Home() {
   // Get the latest 3 blog posts with proper error handling
