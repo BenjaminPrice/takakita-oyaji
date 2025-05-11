@@ -11,8 +11,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/30 z-10"
         style={{
-          backgroundImage:
-            "url('https://images.pexels.com/photos/8466776/pexels-photo-8466776.jpeg?auto=compress&cs=tinysrgb&w=1600')",
+          backgroundImage: "url('/hero.jpeg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundBlendMode: "multiply",
@@ -20,7 +19,7 @@ export default function Hero() {
       ></div>
 
       <div className="container-section relative z-20">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl bg-black/40 p-8 rounded-lg">
           <motion.h1
             className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight"
             initial={{ opacity: 0, y: 20 }}

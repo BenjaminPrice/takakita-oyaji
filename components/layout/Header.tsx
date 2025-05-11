@@ -1,17 +1,17 @@
 "use client";
 
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { Menu, X } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const navigation = [
-  { name: 'ホーム', href: '/' },
-  { name: '私たちについて', href: '/about' },
-  { name: '活動内容', href: '/activities' },
-  { name: 'ブログ', href: '/blog' },
-  { name: 'お問い合わせ', href: '/contact' },
+  { name: "ホーム", href: "/" },
+  { name: "私たちについて", href: "/about" },
+  { name: "活動内容", href: "/activities" },
+  { name: "ブログ", href: "/blog" },
+  { name: "お問い合わせ", href: "/contact" },
 ];
 
 export default function Header() {
@@ -27,17 +27,17 @@ export default function Header() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-primary shadow-md py-2' : 'bg-transparent py-4'
+        isScrolled ? "bg-primary shadow-md py-2" : "bg-primary/40 py-2"
       }`}
     >
-      <div className="container-section">
+      <div className="container-section py-2">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
             <div className="relative h-12 w-12">
@@ -52,7 +52,9 @@ export default function Header() {
             <div>
               <h1 className="text-text-main font-bold leading-tight">
                 <span className="text-lg md:text-xl block">高北おやじの会</span>
-                <span className="text-xs block text-text-muted">高洲北小学校</span>
+                <span className="text-xs block text-text-muted">
+                  高洲北小学校
+                </span>
               </h1>
             </div>
           </Link>
@@ -74,7 +76,7 @@ export default function Header() {
           <button
             className="md:hidden text-text-main"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label={isMenuOpen ? 'メニューを閉じる' : 'メニューを開く'}
+            aria-label={isMenuOpen ? "メニューを閉じる" : "メニューを開く"}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
