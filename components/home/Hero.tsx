@@ -21,12 +21,12 @@ export default function Hero() {
       <div className="container-section relative z-20">
         <div className="max-w-3xl bg-black/40 p-8 rounded-lg">
           <motion.h1
-            className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight"
+            className="text-4xl md:text-6xl text-center font-bold text-white mb-4 leading-tight"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="bg-clip-text text-center text-transparent bg-gradient-to-r from-white to-primary">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-primary">
               高北おやじの会
             </span>
           </motion.h1>
