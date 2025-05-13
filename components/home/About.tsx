@@ -59,7 +59,7 @@ export default function About() {
           >
             <div className="relative rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="https://images.pexels.com/photos/5637689/pexels-photo-5637689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="https://res.cloudinary.com/duh9jrbpp/image/upload/c_limit,h_600,w_400/v1747137794/noda-clown_kjke6b.jpg"
                 alt="高北おやじの会のメンバー"
                 width={600}
                 height={400}

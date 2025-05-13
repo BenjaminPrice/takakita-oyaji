@@ -11,7 +11,8 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/30 z-10"
         style={{
-          backgroundImage: "url('/hero.jpeg')",
+          backgroundImage:
+            "url('https://res.cloudinary.com/duh9jrbpp/image/upload/v1747137528/oyaji-home_enzapy.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundBlendMode: "multiply",
