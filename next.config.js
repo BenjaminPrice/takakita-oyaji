@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   eslint: {
     ignoreDuringBuilds: true,
   },
+  pageExtensions: ["ts", "tsx", "md", "mdx"],
   images: { unoptimized: true },
   webpack: (config) => {
     config.resolve.fallback = {
@@ -12,7 +14,8 @@ const nextConfig = {
     };
     config.module.rules.push({
       test: /\.md$/,
-      use: "frontmatter-markdown-loader",
+      loader: "frontmatter-markdown-loader",
+      options: { mode: ["react-component"] },
     });
     return config;
   },
