@@ -21,17 +21,13 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center">
                 <Mail className="mr-2 h-5 w-5 shrink-0" />
-                <span>info@takakita-oyaji.jp</span>
-              </li>
-              <li>
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSdV14JuNHRqraHKNjj9OM5N-VR4M5ps44N06tsiPUdOVe4llw/viewform"
+                  href="mailto:info@takakitaoyaji.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline inline-flex items-center"
                 >
-                  <Mail className="mr-2 h-5 w-5 shrink-0" />
-                  お問い合わせフォーム
+                  <span>info@takakitaoyaji.com</span>
                 </a>
               </li>
             </ul>
