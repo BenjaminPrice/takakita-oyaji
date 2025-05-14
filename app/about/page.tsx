@@ -16,7 +16,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <div className="relative rounded-lg overflow-hidden shadow-xl h-80 lg:h-auto">
             <Image
-              src="https://images.pexels.com/photos/5637689/pexels-photo-5637689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="https://res.cloudinary.com/duh9jrbpp/image/upload/v1747185386/oyaji2_lu5huo.jpg"
               alt="高北おやじの会のメンバー"
               fill
               className="object-cover"
@@ -83,16 +83,16 @@ export default function AboutPage() {
             <div className="text-center">
               <div className="inline-block bg-accent text-white px-6 py-4 rounded-lg">
                 <p className="font-bold">連絡先</p>
-                <p className="mb-2">メール：info@takakita-oyaji.jp</p>
-                <p className="mb-2">または</p>
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSdV14JuNHRqraHKNjj9OM5N-VR4M5ps44N06tsiPUdOVe4llw/viewform"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-white text-accent px-4 py-2 rounded hover:bg-gray-100 transition-colors"
-                >
-                  お問い合わせフォーム
-                </a>
+                <p className="mb-2">
+                  <a
+                    href="mailto:info@takakitaoyaji.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline inline-flex items-center"
+                  >
+                    <span>info@takakitaoyaji.com</span>
+                  </a>
+                </p>
               </div>
             </div>
           </div>
