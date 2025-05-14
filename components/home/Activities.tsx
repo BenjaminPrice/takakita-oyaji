@@ -1,31 +1,37 @@
 "use client";
 
-import { motion } from 'framer-motion';
-import { Calendar, Flame, Users } from 'lucide-react';
-import Image from 'next/image';
-import Link from 'next/link';
+import { motion } from "framer-motion";
+import { Calendar, Flame, Users } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 const activities = [
   {
-    title: '夏祭り',
-    description: 'お子さんと一緒に盆踊りや屋台を楽しめる夏の恒例イベント。',
-    image: 'https://images.pexels.com/photos/5638792/pexels-photo-5638792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    icon: <Flame className="h-6 w-6" />,
-    date: '7月下旬',
-  },
-  {
-    title: 'スポーツ大会',
-    description: '親子で参加できる運動会。チーム対抗戦で絆を深めます。',
-    image: 'https://images.pexels.com/photos/8523389/pexels-photo-8523389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    title: "運動会",
+    description:
+      "親子や地域の参加者がチームに分かれて競技を楽しむ運動会です。かけっこ、玉入れ、綱引きなど多彩な種目を通して、チームワークや体力づくりを促進しながら、世代を超えた絆を深めます。",
+    image:
+      "https://res.cloudinary.com/duh9jrbpp/image/upload/v1747184858/sports-day_bcmocf.jpg",
     icon: <Users className="h-6 w-6" />,
-    date: '10月中旬',
+    date: "5月",
   },
   {
-    title: '料理教室',
-    description: 'お父さんと子どもで作る料理教室。家庭での食育を促進します。',
-    image: 'https://images.pexels.com/photos/8963961/pexels-photo-8963961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    title: "ドッジボール大会",
+    description:
+      "高学年から低学年、保護者や先生まで参加する人気行事イベント。2025年はお隣の高洲小学校と合同開催も計画されています。子ども VS 大人で白熱した試合を楽しみます。",
+    image:
+      "https://res.cloudinary.com/duh9jrbpp/image/upload/v1747184526/dodgeball_ch7dgs.jpg",
+    icon: <Flame className="h-6 w-6" />,
+    date: "6月",
+  },
+  {
+    title: "学校に泊まろう（ガクトマ）",
+    description:
+      "校庭での水風船や水鉄砲遊び、夜の肝試しなど、非日常の体験を通じて自助・共助の大切さを学ぶイベントです。",
+    image:
+      "https://res.cloudinary.com/duh9jrbpp/image/upload/v1747184527/gakutoma_dzcyv7.jpg",
     icon: <Calendar className="h-6 w-6" />,
-    date: '年4回開催',
+    date: "7月",
   },
 ];
 
@@ -78,13 +84,24 @@ export default function Activities() {
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{activity.title}</h3>
                 <p className="text-text-muted mb-4">{activity.description}</p>
-                <Link 
-                  href={`/activities#${activity.title}`} 
+                <Link
+                  href={`/activities#${activity.title}`}
                   className="text-accent font-medium hover:underline inline-flex items-center"
                 >
                   詳細を見る
-                  <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                  <svg
+                    className="ml-1 w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5l7 7-7 7"
+                    ></path>
                   </svg>
                 </Link>
               </div>
